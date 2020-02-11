@@ -86,6 +86,8 @@ Plus ce nombre est grand plus votre neurone est dans l'erreur.
 <br/>
 La fonction que nous allons utiliser se nomme la cross entropy
 ![](src/loss.png)
+x représente les inputs, y les sorties attendues et h(x) les sorties calculés par les neurones en fonction des inputs.
+<br/>
 Implémenter cette fonction dans votre class neurone.
 <br/>
 [en savoir plus sur la fonction](https://en.wikipedia.org/wiki/Mean_squared_error)
