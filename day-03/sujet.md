@@ -1,6 +1,6 @@
 # Sujet day-03
 
-Avant de commencer cette journée, vous devez impérativement avoir fini la journée précédante.
+Avant de commencer cette journée, il est fortement recommandé d'avoir fini la journée précédente et/ou de regarder la correction et de la comprendre.
 
 Vous allez découvrir aujourd'hui un framework nommé pytorch qui vous servira d'aller plus loin dans l'IA plus simplement.
 
