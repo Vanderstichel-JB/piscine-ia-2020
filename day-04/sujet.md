@@ -8,30 +8,30 @@ Ce paramètre est très difficile à trouver sachant qu'il
 n'y a pas de recette miracle afin de le connaître.
 <br/>
 Afin qu'il soit le plus optimal possible ou du moins sans rapprocher, il faut tester
-et voir à quel moment votre réseaux est le plus fiable (meilleur taux de réussite) possible.
+et voir à quel moment votre réseau est le plus fiable (meilleur taux de réussite) possible.
 
-Le nombre d'Epochs est également très important à prendre en compte car si vous entraîner
+Le nombre d'Epochs est également très important à prendre en compte car si vous entraînez
 trop votre réseau, vous pouvez faire de [l'overfitting](https://fr.wikipedia.org/wiki/Surapprentissage)
-ce qui empechera de trouver des cas inconus (cas non entraînés) pour un réseaux
-qui a pour rôle de classfier.
+ce qui empechera de trouver des cas inconnus (cas non entraînés) pour un réseau
+qui a pour rôle de classifier.
 
-Le learning rate quand à lui peut être trouver grâce à votre fonction loss.
+Le learning rate quand à lui peut être trouvé grâce à votre fonction loss.
 <br/>
 Si votre loss descend d'un coup mais stagne vite c'est que le learning rate
 peut être trop élevé par exemple.
 
-Avant de continuer, renseigner vous sur un paramètre que vous ne connaisser pas, les Batch.
+Avant de continuer, renseignez vous sur un paramètre que vous ne connaissez pas, les Batch.
 Lors d'un entraînement sur plusieurs milliers de données, le mieux n'est pas de tout donner à votre réseau.
-Une solution possible est de choisit à chaque fois 100 données choisies aléatoirement par exemple.
+Une solution possible est de choisir à chaque fois 100 données choisies aléatoirement par exemple.
 
-Depuis plusieurs jours vous travailler sur des réseaux de neurones completement
-connétés (fully-connected)
+Depuis plusieurs jours vous travaillez sur des réseaux de neurones completement
+connectés (fully-connected)
 
-Aujourd'hui vous aller aborder les réseaux de neurones convolutionnel (CNN)
+Aujourd'hui vous aller aborder les réseaux de neurones convolutionnels (CNN)
 <br/> 
-Les CNN ont une ou plusieurs couches dans leur réseaux qui serviront à appliquer une convolution
+Les CNN ont une ou plusieurs couches dans leur réseau qui serviront à appliquer une convolution
 <br/>
-Le but de la convolution est de faire ressortir les données qui peuvent nous intéresse le plus.
+Le but de la convolution est de faire ressortir les données qui peuvent nous intéresser le plus.
 <br/>
 Pour cela nous allons passer un “filtre” qui va nous
 permettre de changer les valeurs de nos données.
@@ -53,16 +53,16 @@ Pour faire ressortir les formes horizontales d’une image, le filtre sera le m�
 ![](src/hori-conv.png)
 <br/>
 Voici un exemple de ce que l’on peut faire avec de la convolution,
-l’image 1 est l’original, on a fait passer un filtre Verticale sur
+l’image 1 est l’original, on a fait passer un filtre vertical sur
 la 2eme et peut voir que les colonnes ressortent.
 <br/>
 Avec un filtre
-horizontale sur la 3ème et on peut voir que les barres du milieu
+horizontal sur la 3ème et on peut voir que les barres du milieu
 du panthéon sont ressorties.
 
 ![](src/result.png)
 
-Voici un shéma vous permettant de comprendre le fonctionnement complet d'un CNN.
+Voici un schéma vous permettant de comprendre le fonctionnement complet d'un CNN.
 
 ![](src/convolution-graph.png)
 
@@ -77,20 +77,20 @@ pour plus d'informations.
 
 <br/>
 <br/>
-Jusqu'à présent, tout les datasets sur lesquel vous deviez travailler étaient simple et parfait.
+Jusqu'à présent, tous les datasets sur lesquel vous deviez travailler étaient simples et parfaits.
 <br/>
 Les datasets sont la base pour la réussite d'un entraînement.
 <br/>
 En général vous devez souvent normaliser vos données afin de simplifier le travail de votre réseau.
 <br/>
-Il est également important d'afficher graphiquement vos données afin de choisir lesquel choisir.
+Il est également important d'afficher graphiquement vos données afin de choisir lequel choisir.
 <br/>
-Une donnée qui ne change jamais n'est pas forcément intérressante notament.
+Une donnée qui ne change jamais n'est pas forcément intérressante nottament.
 
 # Exercice
 
 Depuis le dataset suivant, [Card-Fraud](https://www.kaggle.com/mlg-ulb/creditcardfraud#creditcard.csv)
 
 - Afficher vos données grâce à [matplotlib](https://matplotlib.org/)
-- Determiner quel données sont utiles à garder
+- Determiner quelles données sont utiles à garder
 - Créer un réseau de neurones afin d'avoir le plus haut taux de réussite possible sur la détection de fraude.
